@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    tools:context=".ClockActivity" >
+    
+
+    <TextView 
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/analog_clock"
+    	android:textAppearance="@android:attr/textAppearanceLarge" />
+    
+    <AnalogClock 
+         android:id="@+id/analogClock1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+    
+    <TextView 
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/digital_clock"
+    	android:textAppearance="@android:attr/textAppearanceLarge" />
+    
+    <DigitalClock 
+         android:id="@+id/digitalClock1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+    
+    <!-- picture -->
+    <RelativeLayout
+	    android:id="@+id/frame"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#FF444444" >
+
+</RelativeLayout>
+</LinearLayout>

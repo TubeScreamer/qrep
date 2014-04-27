@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    
+     <TextView
+        android:id="@+id/tvLoggedUser"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentLeft="true"
+    	android:text=""
+    	android:textSize="24sp"
+    	android:textAppearance="@android:attr/textAppearanceLarge" />
+     
+    <Button
+        android:id="@+id/buttonClock"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentTop="true"
+    	android:layout_alignParentLeft="true"
+    	android:layout_marginTop="50dp"
+    	android:onClick="showClock"
+    	android:text="@string/clock" />
+    
+    <Button
+        android:id="@+id/buttonList"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignBottom="@+id/buttonClock"
+       	android:layout_marginTop="50dp"
+    	android:layout_toRightOf="@+id/buttonClock"
+    	android:onClick="showList"
+    	android:text="@string/list" />
+        
+    <Button
+        android:id="@+id/buttonMap"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignLeft="@+id/buttonClock"
+    	android:layout_below="@+id/buttonClock"
+    	android:layout_marginTop="38dp"
+    	android:onClick="showMap"
+    	android:text="@string/map" />
+    
+    <Button
+        android:id="@+id/buttonUI"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignBottom="@+id/buttonMap"
+    	android:layout_alignLeft="@+id/buttonList"
+    	android:layout_marginTop="50dp"
+    	android:layout_toRightOf="@+id/buttonMap"
+    	android:onClick="showUIElements"
+    	android:text="@string/ui" />
+   
+</RelativeLayout>
