@@ -1,8 +1,10 @@
-package cto.lead.betterqapp;
+package cto.lead.betterq.backend.activities;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
+
+import cto.lead.betterqapp.R;
 
 import android.R.string;
 import android.app.Activity;

@@ -1,5 +1,6 @@
-package cto.lead.betterqapp;
+package cto.lead.betterq.backend.activities;
 
+import cto.lead.betterqapp.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;

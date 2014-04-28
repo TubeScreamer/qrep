@@ -1,6 +1,9 @@
-package cto.lead.betterqapp;
+package cto.lead.betterq.backend.activities;
 
 import java.util.HashMap;
+
+import cto.lead.betterqapp.R;
+
 
 import android.app.Activity;
 import android.content.Intent;
