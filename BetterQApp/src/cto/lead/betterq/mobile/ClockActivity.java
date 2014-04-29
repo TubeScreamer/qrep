@@ -1,8 +1,8 @@
-package cto.lead.betterq.backend.activities;
+package cto.lead.betterq.mobile;
 
 
 
-import cto.lead.betterqapp.R;
+import cto.lead.betterq.R;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
