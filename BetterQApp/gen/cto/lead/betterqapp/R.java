@@ -9,7 +9,7 @@ package cto.lead.betterqapp;
 
 public final class R {
     public static final class array {
-        public static final int visited_capitols=0x7f060000;
+        public static final int visited_capitols=0x7f070000;
     }
     public static final class attr {
     }
@@ -34,39 +34,42 @@ public final class R {
         public static final int old_ic_launcher=0x7f020005;
     }
     public static final class id {
-        public static final int RelativeLayout1=0x7f090013;
-        public static final int action_settings=0x7f090020;
-        public static final int analogClock1=0x7f090001;
-        public static final int bandName=0x7f090005;
-        public static final int btnLogin=0x7f09000d;
-        public static final int btnRegister=0x7f09000c;
-        public static final int buttonClock=0x7f09000f;
-        public static final int buttonList=0x7f090010;
-        public static final int buttonMap=0x7f090011;
-        public static final int buttonUI=0x7f090012;
-        public static final int choice1=0x7f09001c;
-        public static final int choice2=0x7f09001a;
-        public static final int choice3=0x7f09001b;
-        public static final int digitalClock1=0x7f090003;
-        public static final int etPassword=0x7f09000b;
-        public static final int etUsername=0x7f090009;
-        public static final int frame=0x7f090004;
-        public static final int listBands=0x7f090007;
-        public static final int location=0x7f090014;
-        public static final int mapButton=0x7f090015;
-        public static final int radioGroup=0x7f090019;
-        public static final int ratingbar=0x7f09001e;
-        public static final int searchBands=0x7f090006;
-        public static final int spinner=0x7f09001f;
-        public static final int textView1=0x7f090000;
-        public static final int textView2=0x7f090002;
-        public static final int tvLoggedUser=0x7f09000e;
-        public static final int tvPassword=0x7f09000a;
-        public static final int tvUsername=0x7f090008;
-        public static final int ui_button=0x7f090017;
-        public static final int ui_checkbox=0x7f090016;
-        public static final int ui_textView=0x7f090018;
-        public static final int ui_textView2=0x7f09001d;
+        public static final int RelativeLayout1=0x7f0a0013;
+        public static final int action_settings=0x7f0a0020;
+        public static final int analogClock1=0x7f0a0001;
+        public static final int bandName=0x7f0a0005;
+        public static final int btnLogin=0x7f0a000d;
+        public static final int btnRegister=0x7f0a000c;
+        public static final int buttonClock=0x7f0a000f;
+        public static final int buttonList=0x7f0a0010;
+        public static final int buttonMap=0x7f0a0011;
+        public static final int buttonUI=0x7f0a0012;
+        public static final int choice1=0x7f0a001c;
+        public static final int choice2=0x7f0a001a;
+        public static final int choice3=0x7f0a001b;
+        public static final int digitalClock1=0x7f0a0003;
+        public static final int etPassword=0x7f0a000b;
+        public static final int etUsername=0x7f0a0009;
+        public static final int frame=0x7f0a0004;
+        public static final int listBands=0x7f0a0007;
+        public static final int location=0x7f0a0014;
+        public static final int mapButton=0x7f0a0015;
+        public static final int radioGroup=0x7f0a0019;
+        public static final int ratingbar=0x7f0a001e;
+        public static final int searchBands=0x7f0a0006;
+        public static final int spinner=0x7f0a001f;
+        public static final int textView1=0x7f0a0000;
+        public static final int textView2=0x7f0a0002;
+        public static final int tvLoggedUser=0x7f0a000e;
+        public static final int tvPassword=0x7f0a000a;
+        public static final int tvUsername=0x7f0a0008;
+        public static final int ui_button=0x7f0a0017;
+        public static final int ui_checkbox=0x7f0a0016;
+        public static final int ui_textView=0x7f0a0018;
+        public static final int ui_textView2=0x7f0a001d;
+    }
+    public static final class integer {
+        public static final int google_play_services_version=0x7f050000;
     }
     public static final class layout {
         public static final int clock_screen=0x7f030000;
@@ -79,34 +82,34 @@ public final class R {
         public static final int ui_elements_screen=0x7f030007;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
+        public static final int main=0x7f090000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int analog_clock=0x7f05000c;
-        public static final int app_name=0x7f050000;
-        public static final int attempts=0x7f050007;
-        public static final int check_box_not_checked=0x7f050012;
-        public static final int checkbox_string=0x7f050011;
-        public static final int choice_text1=0x7f050015;
-        public static final int choice_text2=0x7f050016;
-        public static final int choice_text3=0x7f050017;
-        public static final int city_prompt=0x7f050018;
-        public static final int clock=0x7f05000b;
-        public static final int digital_clock=0x7f05000d;
-        public static final int hello_world=0x7f050002;
-        public static final int hide_checkbox=0x7f050013;
-        public static final int list=0x7f05000a;
-        public static final int location_string=0x7f05000f;
-        public static final int login=0x7f050006;
-        public static final int map=0x7f050009;
-        public static final int password=0x7f050004;
-        public static final int radio_no_choice=0x7f050014;
-        public static final int register=0x7f050005;
-        public static final int search_text=0x7f050010;
-        public static final int show_map_string=0x7f05000e;
-        public static final int ui=0x7f050008;
-        public static final int username=0x7f050003;
+        public static final int action_settings=0x7f060001;
+        public static final int analog_clock=0x7f06000c;
+        public static final int app_name=0x7f060000;
+        public static final int attempts=0x7f060007;
+        public static final int check_box_not_checked=0x7f060012;
+        public static final int checkbox_string=0x7f060011;
+        public static final int choice_text1=0x7f060015;
+        public static final int choice_text2=0x7f060016;
+        public static final int choice_text3=0x7f060017;
+        public static final int city_prompt=0x7f060018;
+        public static final int clock=0x7f06000b;
+        public static final int digital_clock=0x7f06000d;
+        public static final int hello_world=0x7f060002;
+        public static final int hide_checkbox=0x7f060013;
+        public static final int list=0x7f06000a;
+        public static final int location_string=0x7f06000f;
+        public static final int login=0x7f060006;
+        public static final int map=0x7f060009;
+        public static final int password=0x7f060004;
+        public static final int radio_no_choice=0x7f060014;
+        public static final int register=0x7f060005;
+        public static final int search_text=0x7f060010;
+        public static final int show_map_string=0x7f06000e;
+        public static final int ui=0x7f060008;
+        public static final int username=0x7f060003;
     }
     public static final class style {
         /** 
@@ -130,10 +133,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
+        public static final int AppTheme=0x7f080001;
     }
 }
