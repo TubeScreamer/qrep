@@ -4,7 +4,6 @@ import java.util.HashMap;
 
 import cto.lead.betterq.R;
 
-
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;

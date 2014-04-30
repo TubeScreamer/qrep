@@ -5,7 +5,9 @@
     android:versionName="1.0" >
 
     <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="18" />
-
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	
     <!-- 
     <permission android:name="cto.lead.betterq.backend.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
     <uses-permission android:name="cto.lead.betterq.backend.permission.C2D_MESSAGE"/>
@@ -17,16 +19,32 @@
 
     <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
  	-->
+	
+	
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        
+  <!-- 
         <meta-data android:name="com.google.android.gms.version"
            android:value="@integer/google_play_services_version" />
+        --> 
         
+    	
+        <activity
+            android:name="cto.lead.betterq.mobile.SimpleClientActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+
+<!--
         <activity
             android:name="cto.lead.betterq.mobile.MainActivity"
             android:label="@string/app_name" >
@@ -72,7 +90,11 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-        </activity>
+        </activity> 
+        
+        
+-->
+
 <!--         
         <receiver android:name=".GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
