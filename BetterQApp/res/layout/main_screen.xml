@@ -58,5 +58,22 @@
     	android:layout_toRightOf="@+id/buttonMap"
     	android:onClick="showUIElements"
     	android:text="@string/ui" />
-   
+    
+    <Button
+        android:id="@+id/buttonADDPLACES"
+        android:layout_marginTop="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_add_places" 
+   		android:onClick="addPlaces" />
+    
+    <Button
+        android:id="@+id/buttonWATCHPLACES"
+        android:layout_marginTop="200dp"
+        android:layout_alignBottom="@+id/buttonADDPLACES"
+        android:layout_toRightOf="@+id/buttonADDPLACES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_watch_places" 
+   		android:onClick="watchPlaces" />
 </RelativeLayout>

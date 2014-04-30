@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button_add_places">Add places to watch</string>
+    <string name="button_watch_places">Watch places</string>
+</resources>
