@@ -54,4 +54,10 @@ public class User implements Serializable {
 	public void addFavoritePlace(Place favorite){
 		this.favorites.add(favorite);
 	}
+	
+	@Override
+	public String toString() {
+		return "name: " + this.username + " | password: " + this.password + " | level: " + this.level + 
+				" | points: " + this.points;
+	}
 }

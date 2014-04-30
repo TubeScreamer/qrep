@@ -3,7 +3,7 @@ package cto.lead.betterq.server.db.entities;
 import java.io.Serializable;
 
 @SuppressWarnings("serial")
-public class Place implements Serializable{
+public class Place implements Serializable {
 	private int id;
 	private String name;
 	private String address;
@@ -42,5 +42,10 @@ public class Place implements Serializable{
 	}
 	public void setLiveLoad(int liveLoad) {
 		this.liveLoad = liveLoad;
+	}
+	
+	@Override
+	public String toString() {
+		return "id: " + this.id + " | name: " + this.name + " | address: " + this.address + " | liveLoad " + this.liveLoad;
 	}
 }
