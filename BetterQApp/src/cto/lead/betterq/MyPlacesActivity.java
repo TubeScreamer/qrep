@@ -1,58 +1,58 @@
 package cto.lead.betterq;
 
-import android.support.v4.app.Fragment;
+import java.util.ArrayList;
+import java.util.List;
+
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.Gravity;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.Toast;
+import android.widget.AdapterView.OnItemClickListener;
 
-public class MyPlacesActivity extends Activity {
+public class MyPlacesActivity extends Activity implements OnItemClickListener {
+	public static final String[] titles = new String[] { "Strawberry",
+			"Banana", "Orange", "Mixed" };
 
+	public static final String[] descriptions = new String[] {
+			"It is an aggregate accessory fruit",
+			"It is the largest herbaceous flowering plant", "Citrus Fruit",
+			"Mixed Fruits" };
+
+	public static final Integer[] images = { R.drawable.straw,
+			R.drawable.banana, R.drawable.orange, R.drawable.mixed };
+
+	ListView listView;
+	List<RowItem> rowItems;
+
+	/** Called when the activity is first created. */
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_my_places);
 
+		rowItems = new ArrayList<RowItem>();
+		for (int i = 0; i < titles.length; i++) {
+			RowItem item = new RowItem(images[i], titles[i], descriptions[i]);
+			rowItems.add(item);
+		}
+
+		listView = (ListView) findViewById(R.id.list);
+		CustomListViewAdapter adapter = new CustomListViewAdapter(this,
+				R.layout.list_place, rowItems);
+		listView.setAdapter(adapter);
+		listView.setOnItemClickListener(this);
 	}
 
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.my_places, menu);
-		return true;
+	public void onItemClick(AdapterView<?> parent, View view, int position,
+			long id) {
+		Toast toast = Toast.makeText(getApplicationContext(), "Item "
+				+ (position + 1) + ": " + rowItems.get(position),
+				Toast.LENGTH_SHORT);
+		toast.setGravity(Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 0);
+		toast.show();
 	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
-	}
-
-	/**
-	 * A placeholder fragment containing a simple view.
-	 */
-	public static class PlaceholderFragment extends Fragment {
-
-		public PlaceholderFragment() {
-		}
-
-		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_my_places,
-					container, false);
-			return rootView;
-		}
-	}
-
 }

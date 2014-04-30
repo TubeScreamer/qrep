@@ -2,8 +2,8 @@ package cto.lead.betterq.mobile;
 
 import java.util.HashMap;
 
-import cto.lead.betterq.ListWithCheckbox;
 import cto.lead.betterq.MyPlacesActivity;
+import cto.lead.betterq.ListWithCheckbox;
 import cto.lead.betterq.R;
 
 

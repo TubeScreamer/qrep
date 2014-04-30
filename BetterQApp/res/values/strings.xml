@@ -38,7 +38,7 @@
     </string-array>
 
     <string name="city_prompt">Pick a City:</string>
-    <string name="title_activity_list_with_checkbox">ListWithCheckbox</string>
-    <string name="title_activity_my_places">MyPlacesActivity</string>
+    <string name="title_activity_list_with_checkbox">BetterQ</string>
+    <string name="title_activity_my_places">BetterQ</string>
 
 </resources>

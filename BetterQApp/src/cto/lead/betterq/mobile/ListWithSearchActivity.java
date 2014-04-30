@@ -6,7 +6,6 @@ import java.util.HashMap;
 
 import cto.lead.betterq.R;
 
-import android.R.string;
 import android.app.Activity;
 import android.os.Bundle;
 import android.text.Editable;
