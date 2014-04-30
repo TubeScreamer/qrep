@@ -1,4 +1,4 @@
-package cto.lead.betterq.mobile;
+package cto.lead.betterq.activities;
 
 
 

@@ -1,9 +1,7 @@
-package cto.lead.betterq.mobile;
+package cto.lead.betterq.activities;
 
 import java.util.HashMap;
 
-import cto.lead.betterq.MyPlacesActivity;
-import cto.lead.betterq.ListWithCheckbox;
 import cto.lead.betterq.R;
 
 
@@ -65,7 +63,7 @@ public class MainActivity extends Activity {
 	}
 	
 	public void addPlaces(View view) {
-		Intent intent = new Intent(this, ListWithCheckbox.class);
+		Intent intent = new Intent(this, ListWithCheckboxActivity.class);
 		startActivity(intent);
 	}
 	

@@ -1,8 +1,11 @@
-package cto.lead.betterq;
+package cto.lead.betterq.activities;
 
 import java.util.ArrayList;
 
-
+import cto.lead.betterq.R;
+import cto.lead.betterq.R.id;
+import cto.lead.betterq.R.layout;
+import cto.lead.betterq.uientities.PlaceUI;
 import android.support.v4.app.Fragment;
 import android.app.Activity;
 import android.content.Context;
@@ -24,7 +27,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.os.Build;
 
-public class ListWithCheckbox extends Activity {
+public class ListWithCheckboxActivity extends Activity {
 
 	 MyCustomAdapter dataAdapter = null;
 
@@ -43,25 +46,25 @@ public class ListWithCheckbox extends Activity {
 	 private void displayListView() {
 
 	  // Array list of countries
-	  ArrayList<Place> stateList = new ArrayList<Place>();
+	  ArrayList<PlaceUI> stateList = new ArrayList<PlaceUI>();
 
-	  Place place = new Place("1", "India", false);
+	  PlaceUI place = new PlaceUI("1", "India", false);
 	  stateList.add(place);
-	  place = new Place("2", "Australia", true);
+	  place = new PlaceUI("2", "Australia", true);
 	  stateList.add(place);
-	  place = new Place("3", "Brazil", false);
+	  place = new PlaceUI("3", "Brazil", false);
 	  stateList.add(place);
-	  place = new Place("4", "China", true);
+	  place = new PlaceUI("4", "China", true);
 	  stateList.add(place);
-	  place = new Place("5", "Germany", true);
+	  place = new PlaceUI("5", "Germany", true);
 	  stateList.add(place);
-	  place = new Place("6", "Hungary", false);
+	  place = new PlaceUI("6", "Hungary", false);
 	  stateList.add(place);
-	  place = new Place("7", "Italy", false);
+	  place = new PlaceUI("7", "Italy", false);
 	  stateList.add(place);
-	  place = new Place("8", "US", false);
+	  place = new PlaceUI("8", "US", false);
 	  stateList.add(place);
-	  place = new Place("9", "UK", false);
+	  place = new PlaceUI("9", "UK", false);
 	  stateList.add(place);
 
 	  // create an ArrayAdaptar from the String Array
@@ -75,7 +78,7 @@ public class ListWithCheckbox extends Activity {
 	   public void onItemClick(AdapterView<?> parent, View view,
 	     int position, long id) {
 	    // When clicked, show a toast with the TextView text
-	    Place state = (Place) parent.getItemAtPosition(position);
+	    PlaceUI state = (PlaceUI) parent.getItemAtPosition(position);
 	    Toast.makeText(getApplicationContext(),
 	      "Clicked on : " + state.getName(), Toast.LENGTH_LONG)
 	      .show();
@@ -83,15 +86,15 @@ public class ListWithCheckbox extends Activity {
 	  });
 	 }
 
-	 private class MyCustomAdapter extends ArrayAdapter<Place> {
+	 private class MyCustomAdapter extends ArrayAdapter<PlaceUI> {
 
-	  private ArrayList<Place> stateList;
+	  private ArrayList<PlaceUI> stateList;
 
 	  public MyCustomAdapter(Context context, int textViewResourceId,
 
-	  ArrayList<Place> stateList) {
+	  ArrayList<PlaceUI> stateList) {
 	   super(context, textViewResourceId, stateList);
-	   this.stateList = new ArrayList<Place>();
+	   this.stateList = new ArrayList<PlaceUI>();
 	   this.stateList.addAll(stateList);
 	  }
 
@@ -123,7 +126,7 @@ public class ListWithCheckbox extends Activity {
 	    holder.name.setOnClickListener(new View.OnClickListener() {
 	     public void onClick(View v) {
 	      CheckBox cb = (CheckBox) v;
-	      Place _state = (Place) cb.getTag();
+	      PlaceUI _state = (PlaceUI) cb.getTag();
 
 	      Toast.makeText(
 	        getApplicationContext(),
@@ -139,7 +142,7 @@ public class ListWithCheckbox extends Activity {
 	    holder = (ViewHolder) convertView.getTag();
 	   }
 
-	   Place state = stateList.get(position);
+	   PlaceUI state = stateList.get(position);
 
 	   holder.code.setText(" (" + state.getCode() + ")");
 	   holder.name.setText(state.getName());
@@ -164,10 +167,10 @@ public class ListWithCheckbox extends Activity {
 	    StringBuffer responseText = new StringBuffer();
 	    responseText.append("Selected Countries are...\n");
 
-	    ArrayList<Place> stateList = dataAdapter.stateList;
+	    ArrayList<PlaceUI> stateList = dataAdapter.stateList;
 
 	    for (int i = 0; i < stateList.size(); i++) {
-	     Place state = stateList.get(i);
+	     PlaceUI state = stateList.get(i);
 
 	     if (state.isSelected()) {
 	      responseText.append("\n" + state.getName());

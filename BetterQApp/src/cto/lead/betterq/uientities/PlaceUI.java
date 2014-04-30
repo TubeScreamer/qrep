@@ -1,12 +1,12 @@
-package cto.lead.betterq;
+package cto.lead.betterq.uientities;
 
-public class Place {
+public class PlaceUI {
 
 		 String id = null;
 		 String name = null;
 		 boolean selected = false;
 
-		 public Place(String code, String name, boolean selected) {
+		 public PlaceUI(String code, String name, boolean selected) {
 		  super();
 		  this.id = code;
 		  this.name = name;
